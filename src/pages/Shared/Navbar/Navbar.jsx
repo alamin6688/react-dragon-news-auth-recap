@@ -4,9 +4,10 @@ import userDefaultPic from '../../../assets/user.png';
 const Navbar = () => {
 
     const navLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/career">Career</NavLink></li>
+        <li className="mr-2"><NavLink to="/">Home</NavLink></li>
+        <li className="mr-2"><NavLink to="/about">About</NavLink></li>
+        <li className="mr-2"><NavLink to="/career">Career</NavLink></li>
+        <li className="mr-2"><NavLink to="/login">Login</NavLink></li>
 
     </>
 
@@ -34,7 +35,7 @@ const Navbar = () => {
                         <img src={userDefaultPic} />
                     </div>
                 </label>
-                <Link>
+                <Link to="/login">
                     <button className="btn">Login</button>
                 </Link>
             </div>
